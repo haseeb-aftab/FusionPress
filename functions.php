@@ -22,4 +22,9 @@ function my_custom_sidebar(){
 }
 add_action( 'widgets_init', 'my_custom_sidebar' );
 
+add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_style' );
+function themeslug_enqueue_style() {
+    wp_enqueue_style( 'home-styles', get_template_directory_uri(). 'assets/css/main.css', [], 1.0, 'all' );
+}
+
 

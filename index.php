@@ -1,96 +1,50 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>FusionPress by Haseeb</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<?php get_header(); ?>
 
-			<!-- Header -->
-				<section id="header">
+				<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2>Howdy. This is FusionPress.</h2>
+						<p>A responsive template by Haseeb</p>
+					</header>
+				</section>
 
-					<!-- Logo -->
-						<h1><a href="index.html">FusionPress</a></h1>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Dropdown</a>
-									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-										<li>
-											<a href="#">Phasellus consequat</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-												<li><a href="#">Nisl sed aliquam</a></li>
-												<li><a href="#">Dolore adipiscing</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
-									</ul>
-								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-							</ul>
-						</nav>
-
-					<!-- Banner -->
-						<section id="banner">
-							<header>
-								<h2>Howdy. This is FusionPress.</h2>
-								<p>A responsive template by Haseeb</p>
-							</header>
-						</section>
-
-					<!-- Intro -->
-						<section id="intro" class="container">
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<section class="first">
-										<i class="icon solid featured fa-cog"></i>
-										<header>
-											<h2>Ipsum consequat</h2>
-										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section class="middle">
-										<i class="icon solid featured alt fa-bolt"></i>
-										<header>
-											<h2>Magna etiam dolor</h2>
-										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section class="last">
-										<i class="icon solid featured alt2 fa-star"></i>
-										<header>
-											<h2>Tempus adipiscing</h2>
-										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-									</section>
-								</div>
-							</div>
-							<footer>
-								<ul class="actions">
-									<li><a href="#" class="button large">Get Started</a></li>
-									<li><a href="#" class="button alt large">Learn More</a></li>
-								</ul>
-							</footer>
-						</section>
-
+				<!-- Intro -->
+				<section id="intro" class="container">
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<section class="first">
+								<i class="icon solid featured fa-cog"></i>
+								<header>
+									<h2>Ipsum consequat</h2>
+								</header>
+								<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="middle">
+								<i class="icon solid featured alt fa-bolt"></i>
+								<header>
+									<h2>Magna etiam dolor</h2>
+								</header>
+								<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="last">
+								<i class="icon solid featured alt2 fa-star"></i>
+								<header>
+									<h2>Tempus adipiscing</h2>
+								</header>
+								<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+							</section>
+						</div>
+					</div>
+					<footer>
+						<ul class="actions">
+							<li><a href="#" class="button large">Get Started</a></li>
+							<li><a href="#" class="button alt large">Learn More</a></li>
+						</ul>
+					</footer>
 				</section>
 
 			<!-- Main -->
@@ -107,7 +61,7 @@
 										<div class="row">
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="<?php echo get_template_directory_uri(); ?>/images/pic02.jpg" alt="" /></a>
 													<header>
 														<h3>Ipsum feugiat et dolor</h3>
 													</header>
@@ -135,7 +89,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="<?php echo get_template_directory_uri(); ?>/images/pic04.jpg" alt="" /></a>
 													<header>
 														<h3>Consequat et tempus</h3>
 													</header>
@@ -163,7 +117,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="<?php echo get_template_directory_uri(); ?>/images/pic06.jpg" alt="" /></a>
 													<header>
 														<h3>Etiam nisl consequat</h3>
 													</header>
@@ -203,7 +157,7 @@
 										<div class="row">
 											<div class="col-6 col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+													<a href="#" class="image featured new"><img src="<?php echo get_template_directory_uri(); ?>/images/pic08.jpg" alt="" /></a>
 													<header>
 														<h3>Magna tempus consequat</h3>
 														<p>Posted 45 minutes ago</p>
@@ -219,7 +173,7 @@
 											</div>
 											<div class="col-6 col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="<?php echo get_template_directory_uri(); ?>/images/pic09.jpg" alt="" /></a>
 													<header>
 														<h3>Aptent veroeros aliquam</h3>
 														<p>Posted 45 minutes ago</p>
@@ -284,7 +238,7 @@
 									<header>
 										<h2>What's this all about?</h2>
 									</header>
-									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+									<a href="#" class="image featured"><img src="<?php echo get_template_directory_uri(); ?>/images/pic10.jpg" alt="" /></a>
 									<p>
 										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
 										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
@@ -327,61 +281,6 @@
 									</ul>
 								</section>
 							</div>
-							<div class="col-4 col-12-medium">
-								<section>
-									<header>
-										<h2>Vitae tempor lorem</h2>
-									</header>
-									<ul class="social">
-										<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-										<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-										<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-										<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
-										<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-									</ul>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<p>
-												Untitled Incorporated<br />
-												1234 Somewhere Road Suite<br />
-												Nashville, TN 00000-0000
-											</p>
-										</li>
-										<li>
-											<h3>Mail</h3>
-											<p><a href="#">someone@untitled.tld</a></p>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<p>(800) 000-0000</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-12">
 
-								<!-- Copyright -->
-									<div id="copyright">
-										<ul class="links">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
-
-							</div>
-						</div>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<?php get_footer(); ?>
+							
